@@ -1,0 +1,88 @@
+.submitBlogForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+
+
+    input {
+        padding: 15px 10px;
+        font-size: 16px;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #ccc;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    textarea {
+        padding: 15px 10px;
+        font-size: 14px;
+        width: 100%;
+        height: 100px;
+        background-color: transparent;
+        border: 1px solid #ccc;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .nameFields {
+        display: flex;
+        gap: 20px;
+
+        input {
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    .contactFields {
+        display: flex;
+        gap: 20px;
+
+        input {
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .countrySelect {
+            width: 30%;
+            padding: 15px 10px;
+            font-size: 14px;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid #ccc;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }    
+
+    button {
+        padding: 15px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 150px;
+        color: #333;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

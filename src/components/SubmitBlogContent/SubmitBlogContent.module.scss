@@ -1,0 +1,24 @@
+.submitBlogContent {
+    margin-bottom: 30px;
+
+    @media (min-width: 992px) {
+        padding-left: 50px;
+    }
+    
+    .submitBlogImage img {
+        width: 400px;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+        max-width: 800px;
+        font-weight: 800;
+        line-height: 1.2;
+
+        @media (min-width: 992px) {
+            max-width: 500px;
+        }
+
+    }
+}

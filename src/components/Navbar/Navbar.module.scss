@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    background-color: #fff;
+    box-shadow: 0 7px 6px rgba(0,0,0,.11);
+
+    .navbarContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .toggleMenu {
+            cursor: pointer;
+            width: 22px;
+            height: 22px;
+
+
+            .toggleMenuIcon {
+                width: 100%;
+                height: 100%;
+            }
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        .navLinks {
+            display: flex;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                color: #333;
+                font-weight: 500;
+
+                &:hover {
+                    color: #007bff;
+                }
+            }
+
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+
+    }
+
+    .navbarActions {
+        display: flex;
+        gap: 15px;
+
+        .loginBtn, .bookDemo, .getStarted {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+
+            &.loginBtn {
+                background-color: transparent;
+                color: #333;
+                font-size: 16px;
+            }
+
+            &.bookDemo {
+                border: 2px solid rgb(9, 105, 218);
+                background-color: transparent;
+            }
+
+            &.getStarted {
+                background-color: rgb(9, 105, 218);
+                color: #fff;
+                font-weight: 600;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
